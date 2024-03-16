@@ -19,24 +19,24 @@ const Food = () => {
 
   return (
     <div className='max-w-[1640px] m-auto px-4 py-12'>
-      <h1 className='text-orange-600 font-bold text-4xl text-center'>Top Rated Menu Items</h1>
+      <h1 className='text-orange-600 font-bold text-4xl text-center'>Mais Pedidos do Menu</h1>
 
       {/* filter row */}
       <div className='flex flex-col lg:flex-row justify-between'>
             {/* filter type */} 
             <div>
-                <p className='font-bold text-gray-700'>Filter Type</p>
+                <p className='font-bold text-gray-700'>Por Tipo</p>
                 <div className='flex justify-between flex-wrap'>
-                    <button onClick={()=>setFoods(data)} className='border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1'>All</button>
+                    <button onClick={()=>setFoods(data)} className='border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1'>Todos</button>
                     <button onClick={()=>filterType('burger')} className='border-orange-600  text-orange-600 hover:bg-orange-600 hover:text-white m-1'>Burguers</button>
                     <button onClick={()=>filterType('pizza')} className='border-orange-600  text-orange-600 hover:bg-orange-600 hover:text-white m-1'>Pizza</button>
                     <button onClick={()=>filterType('salad')} className='border-orange-600  text-orange-600 hover:bg-orange-600 hover:text-white m-1'>Saladas</button>
-                    <button onClick={()=>filterType('chicken')} className='border-orange-600  text-orange-600 hover:bg-orange-600 hover:text-white m-1'>Chicken</button>
+                    <button onClick={()=>filterType('chicken')} className='border-orange-600  text-orange-600 hover:bg-orange-600 hover:text-white m-1'>Frangos</button>
                 </div>
             </div>
             {/* filter Price */}
             <div>
-                <p className='font-bold text-gray-700'>Filter Price</p>
+                <p className='font-bold text-gray-700'>Por Preço</p>
                 <div className='flex justify-between max-w-[390px] w-full'>
                     <button onClick={()=>filterPrice('$')} className='border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1'>$</button>
                     <button onClick={()=>filterPrice('$$')} className='border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1'>$$</button>
